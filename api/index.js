@@ -40,10 +40,10 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
-app.use("/api/categories", categoryRoute);
+app.use("https://blog-app-otyn.onrender.com/api/auth", authRoute);
+app.use("https://blog-app-otyn.onrender.com/api/users", userRoute);
+app.use("https://blog-app-otyn.onrender.com/api/posts", postRoute);
+app.use("https://blog-app-otyn.onrender.com/api/categories", categoryRoute);
 
 app.listen("5000", () => {
   console.log("Backend is running.");
