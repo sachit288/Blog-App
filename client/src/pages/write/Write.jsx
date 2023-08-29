@@ -23,12 +23,12 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("https://blog-app-otyn.onrender.com/api/upload", data);
+        await axios.post("https://blogappsachitsharma.onrender.com/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post("https://blog-app-otyn.onrender.com/api/posts", newPost);
-      window.location.replace("https://blog-app-otyn.onrender.com/api/post/" + res.data._id);
+      const res = await axios.post("https://blogappsachitsharma.onrender.com/posts", newPost);
+      window.location.replace("https://blogappsachitsharma.onrender.com/post/" + res.data._id);
     } catch (err) {}
   };
   return (

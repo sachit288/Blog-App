@@ -30,11 +30,11 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("https://blog-app-otyn.onrender.com/api/upload", data);
+        await axios.post("https://blogappsachitsharma.onrender.com/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.put("https://blog-app-otyn.onrender.com/api/users/" + user._id, updatedUser);
+      const res = await axios.put("https://blogappsachitsharma.onrender.com/users/" + user._id, updatedUser);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {

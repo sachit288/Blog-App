@@ -15,14 +15,14 @@ function App() {
     <Router>
       <TopBar />
       <Switch>
-        <Route exact path="https://blog-app-otyn.onrender.com/api/">
+        <Route exact path="https://blogappsachitsharma.onrender.com/">
           <Home />
         </Route>
-        <Route path="https://blog-app-otyn.onrender.com/api/register">{user ? <Home /> : <Register />}</Route>
-        <Route path="https://blog-app-otyn.onrender.com/api/login">{user ? <Home /> : <Login />}</Route>
-        <Route path="https://blog-app-otyn.onrender.com/api/write">{user ? <Write /> : <Register />}</Route>
-        <Route path="https://blog-app-otyn.onrender.com/api/settings">{user ? <Settings /> : <Register />}</Route>
-        <Route path="https://blog-app-otyn.onrender.com/api/post/:postId">
+        <Route path="https://blogappsachitsharma.onrender.com/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="https://blogappsachitsharma.onrender.com/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="https://blogappsachitsharma.onrender.com/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="https://blogappsachitsharma.onrender.com/settings">{user ? <Settings /> : <Register />}</Route>
+        <Route path="https://blogappsachitsharma.onrender.com/post/:postId">
           <Single />
         </Route>
       </Switch>

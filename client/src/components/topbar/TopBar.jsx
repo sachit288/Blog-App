@@ -21,22 +21,22 @@ export default function TopBar() {
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
-            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
+            <Link className="link" to="https://blogappsachitsharma.onrender.com/">
               HOME
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
+            <Link className="link" to="https://blogappsachitsharma.onrender.com/">
               ABOUT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
+            <Link className="link" to="https://blogappsachitsharma.onrender.com/">
               CONTACT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="https://blog-app-otyn.onrender.com/api/write">
+            <Link className="link" to="https://blogappsachitsharma.onrender.com/write">
               WRITE
             </Link>
           </li>
@@ -47,18 +47,18 @@ export default function TopBar() {
       </div>
       <div className="topRight">
         {user ? (
-          <Link to="https://blog-app-otyn.onrender.com/api/settings">
+          <Link to="https://blogappsachitsharma.onrender.com/settings">
             <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">
             <li className="topListItem">
-              <Link className="link" to="https://blog-app-otyn.onrender.com/api/login">
+              <Link className="link" to="https://blogappsachitsharma.onrender.com/login">
                 LOGIN
               </Link>
             </li>
             <li className="topListItem">
-              <Link className="link" to="https://blog-app-otyn.onrender.com/api/register">
+              <Link className="link" to="https://blogappsachitsharma.onrender.com/register">
                 REGISTER
               </Link>
             </li>

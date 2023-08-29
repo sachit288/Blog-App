@@ -12,7 +12,7 @@ export default function Post({ post }) {
             <span className="postCat">{c.name}</span>
           ))}
         </div>
-        <Link to={`https://blog-app-otyn.onrender.com/api/post/${post._id}`} className="link">
+        <Link to={`https://blogappsachitsharma.onrender.com/post/${post._id}`} className="link">
           <span className="postTitle">{post.title}</span>
         </Link>
         <hr />

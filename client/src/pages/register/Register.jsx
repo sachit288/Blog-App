@@ -13,12 +13,12 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("https://blog-app-otyn.onrender.com/api/auth/register", {
+      const res = await axios.post("https://blogappsachitsharma.onrender.com/auth/register", {
         username,
         email,
         password,
       });
-      res.data && window.location.replace("https://blog-app-otyn.onrender.com/api/login");
+      res.data && window.location.replace("https://blogappsachitsharma.onrender.com/login");
     } catch (err) {
       setError(true);
     }
@@ -53,7 +53,7 @@ export default function Register() {
         </button>
       </form>
       <button className="registerLoginButton">
-        <Link className="link" to="https://blog-app-otyn.onrender.com/api/login">
+        <Link className="link" to="https://blogappsachitsharma.onrender.com/login">
           Login
         </Link>
       </button>
