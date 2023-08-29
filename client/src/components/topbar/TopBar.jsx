@@ -21,22 +21,22 @@ export default function TopBar() {
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
               HOME
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
               ABOUT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="https://blog-app-otyn.onrender.com/api/">
               CONTACT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/write">
+            <Link className="link" to="https://blog-app-otyn.onrender.com/api/write">
               WRITE
             </Link>
           </li>
@@ -47,18 +47,18 @@ export default function TopBar() {
       </div>
       <div className="topRight">
         {user ? (
-          <Link to="/settings">
+          <Link to="https://blog-app-otyn.onrender.com/api/settings">
             <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">
             <li className="topListItem">
-              <Link className="link" to="/login">
+              <Link className="link" to="https://blog-app-otyn.onrender.com/api/login">
                 LOGIN
               </Link>
             </li>
             <li className="topListItem">
-              <Link className="link" to="/register">
+              <Link className="link" to="https://blog-app-otyn.onrender.com/api/register">
                 REGISTER
               </Link>
             </li>

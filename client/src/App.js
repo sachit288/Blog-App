@@ -15,14 +15,14 @@ function App() {
     <Router>
       <TopBar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="https://blog-app-otyn.onrender.com/api/">
           <Home />
         </Route>
-        <Route path="/register">{user ? <Home /> : <Register />}</Route>
-        <Route path="/login">{user ? <Home /> : <Login />}</Route>
-        <Route path="/write">{user ? <Write /> : <Register />}</Route>
-        <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
-        <Route path="/post/:postId">
+        <Route path="https://blog-app-otyn.onrender.com/api/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="https://blog-app-otyn.onrender.com/api/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="https://blog-app-otyn.onrender.com/api/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="https://blog-app-otyn.onrender.com/api/settings">{user ? <Settings /> : <Register />}</Route>
+        <Route path="https://blog-app-otyn.onrender.com/api/post/:postId">
           <Single />
         </Route>
       </Switch>

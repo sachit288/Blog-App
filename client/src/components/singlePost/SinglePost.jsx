@@ -17,7 +17,7 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path);
+      const res = await axios.get("https://blog-app-otyn.onrender.com/api/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -27,16 +27,16 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/posts/${post._id}`, {
+      await axios.delete(`https://blog-app-otyn.onrender.com/api/posts/${post._id}`, {
         data: { username: user.username },
       });
-      window.location.replace("/");
+      window.location.replace("https://blog-app-otyn.onrender.com/api/");
     } catch (err) {}
   };
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/posts/${post._id}`, {
+      await axios.put(`https://blog-app-otyn.onrender.com/api/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
@@ -79,7 +79,7 @@ export default function SinglePost() {
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
             Author:
-            <Link to={`/?user=${post.username}`} className="link">
+            <Link to={`https://blog-app-otyn.onrender.com/api/?user=${post.username}`} className="link">
               <b> {post.username}</b>
             </Link>
           </span>
